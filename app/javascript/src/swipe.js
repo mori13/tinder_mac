@@ -37,6 +37,7 @@ if(location.pathname == "/users") {
   
           event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
         });
+        
         hammertime.on('panend', function (event) {
           el.classList.remove('moving');
           swipeContainer.classList.remove('swipe_like');
